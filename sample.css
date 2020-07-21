@@ -115,7 +115,7 @@ header h1{
     margin:auto;
     
     outline: 2px dashed black;
-    background: linear-gradient(to right, #fcf,#cfc,#ffc,#cff,#fcc);
+   
 	background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 1px;
