@@ -1,44 +1,10 @@
 body{
     background-color: rgba(0, 0, 0, 0.788);
-    background-image: url(././static/vilas.JPG);
+    background-image: url(././static/city.JPG);
     background-repeat: no-repeat;
     background-size: 100% 100%;
    
     
-}
-nav{
-    display: flex;
-    justify-content: space-around;
-    align-content: center;
-    position: fixed;
-    height:6vh;
-    width: 98%;
-    border-radius: 2vh;
-    margin: auto ;  
-    color:white;  
-    text-align: center;
-    background-image: url('././static/content.JPG');
-    background-size: cover;  
-   
-    
-}
-
-nav ul{
-    display: flex;
-    justify-content: space-between;
-    align-content: right;
-    height: inherit;
-    margin: auto 0px auto auto;
-}
-nav li{
-    display:flex;
-    max-height: 100%;
-    max-width: 100%;
-    border: 1px solid #fff;
-    padding: 2px;
-    margin: auto 3px;
-    border-radius:2vh;
-    list-style: none;
 }
 a{  display: flex;
     text-decoration:none;
@@ -184,7 +150,7 @@ footer{
     min-height: 25vh;
     height:max-content;
     background-color: #d89a23; 
-    background-image: url("././static/2196477.JPG");
+    background-image: url("././static/sound.JPG");
     background-size: contain;
     text-align: center;
     margin: auto;
