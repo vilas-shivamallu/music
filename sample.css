@@ -80,13 +80,10 @@ header h1{
     display: flex;
     align-self:unset;
     margin:auto;
-    
-    outline: 2px dashed black;
-   
-	background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color:lightsalmon;
+    -webkit-text-stroke-color:white;
 }
 div.card{
     min-height: 300px;
