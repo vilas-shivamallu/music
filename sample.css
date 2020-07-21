@@ -1,8 +1,8 @@
 body{
     background-color: rgba(0, 0, 0, 0.788);
     background-image: url(././static/vilas.JPG);
-    background-repeat: no-repeat;
-    background-size: 1500px;
+    background-repeat: repeat;
+   
     
 }
 nav{
