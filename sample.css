@@ -155,7 +155,7 @@ footer{
     text-align: center;
     margin: auto;
     border-radius: 0px 0px 3vh 3vh;
-    filter: grayscale(100%);
+    
 }
 @media (max-width: 100%){
     header,footer,.audiocard,.card,.content,audio{
