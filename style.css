@@ -72,15 +72,19 @@ div.card {
     box-shadow: 0px 5px 5px #000, 0px 5px 10px #000;
     border-radius: 2vh;
     display: grid;
+    cursor: pointer;
     grid-template-rows: repeat(4, 1fr);
 }
 
 @keyframes slide {
+    25% {
+        transform: scale(0.99);
+    }
     50% {
         transform: scale(0.99);
     }
-    100% {
-        transform: scale(1);
+    75% {
+        transform: scale(0.99);
     }
 }
 
@@ -122,4 +126,42 @@ footer {
     border: 2px solid #0000007c;
     padding: 10px;
     font-size: medium;
+}
+
+div.playButtonCard {
+    text-decoration-color: rgb(247, 11, 11);
+    text-align: center;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 2fr);
+    border-top: 2px dashed #000;
+}
+
+.playButtonsGrid {
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    font-size: medium;
+    border: none;
+    display: grid;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 2fr);
+}
+
+.controller {
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    font-size: medium;
+    border: none;
+    display: grid;
+    cursor: pointer;
+    justify-content: center;
+}
+.controller:hover {
+        transform: scale(1.025);
+        box-shadow: 0px 5px 5px #000;
+        animation-name: slide;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
 }
