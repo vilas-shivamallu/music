@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css" />
+    <style type="text/css">
+        body::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        body::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px rgb(75, 38, 23);
+            border-radius: 2px;
+        }
+
+        body::-webkit-scrollbar-thumb {
+            background: #95ace5;
+            border-radius: 2px;
+        }
+    </style>
+    <title>Music07</title>
+    <link rel="icon" href="../static/icons/favicon.svg" />
+    <script src="audioCard.js"></script>
+</head>
+
+<body>
+    <button class="buttonClass" style="position: absolute;"><a href="../index.html"> &#8249;</a></button>
+    <div class="container">
+        <header>
+            <h1>“Music gives a soul to the universe, wings to the mind, flight to the imagination, and life to everything.” – Plato</h1>
+        </header>
+        <section>
+            <div class="playCard" id="playCard">
+                    <h2 id="playCardSongName"></h2>
+            </div>
+            <div class="playButtonCard">
+                <div class="playButtonsGrid"></div>
+                <div class="playButtonsGrid" style="background-color: #10101021;">
+                    <div class="controller">
+                    </div>
+                    <div class="controller">
+                        <span onclick="replay()"><img src="../static/icons/replay.svg" alt="icon-repeat" width="24px" height="25px"></span>
+                    </div>
+                    <div class="controller">
+                        <span onclick="playPrev(musicPausedAt-1)"><img src="../static/icons/previous-button.svg" alt="previous-button" width="24px" height="25px"></span>
+                    </div>
+                    <div class="controller">
+                        <span onclick="playPause()" id="playButton"><img src="../static/icons/pause-play-button.svg" alt="play-pause-button" width="40px" height="40px"></span>
+                    </div>
+                    <div class="controller">
+                        <span onclick="playNext(musicPausedAt+1)"><img src="../static/icons/next-button.svg" alt="next-button" width="24px" height="25px"></span>
+                    </div>
+                    <div class="controller">
+                        <span onclick="playAll()" id="playAll"><img src="../static/icons/repeat.svg" alt="icon-repeat" width="24px" height="25px"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="card">
+                <div class="audiocard" onclick="playPause('mastMaganAudioId')" style="background-image: url('../static/flower.jpg'); background-size: cover; color:aliceblue">
+
+                    <h2>Mast Magan</h2>
+                    <audio  id="mastMaganAudioId">
+
+                        <source src="../songs/MastMagan.mp3" type="audio/mpeg" />
+                    </audio>
+                </div>
+                <div class="audiocard" onclick="playPause('arMedley')" style="background-image: url('../static/forest.jpg'); background-size: cover; color:rgb(255, 255, 255)">
+                    <h2>A R Rahman Medley</h2>
+                    <audio  id="arMedley">
+
+                        <source src="../songs/A_R_Rahman_Medley_Part-2__Mashup_Cover__Threeory.mp3"
+                            type="audio/mpeg" />
+                    </audio>
+                </div>
+                <div class="audiocard" onclick="playPause('Jeena_Jeena')" style="background-image: url('../static/image.jpg'); background-size: cover; color:rgb(246, 248, 248)">
+                    <h2>Jeena Jeena </h2>
+                    <audio  id="Jeena_Jeena">
+
+                        <source src="../songs/Jeena_Jeena.mp3" type="audio/mpeg" />
+                    </audio>
+                </div>
+                <div class="audiocard" onclick="playPause('Janam_Janam_320_123Musiq')"style="background-image: url('../static/content.jpg'); background-size: cover; color:aliceblue">
+                    <h2>Janam Janam</h2>
+                    <audio  id="Janam_Janam_320_123Musiq">
+
+                        <source src="../songs/Janam_Janam_320_123Musiq.mobi.mp3" type="audio/mpeg" />
+                    </audio>
+                </div>
+                <div class="audiocard" onclick="playPause('ar')"style="background-image: url('../static/waterfallsDark.jpg'); background-size: cover; color:rgb(0, 0, 0)">
+                    <h2> AR</h2>
+                    <audio  id="ar">
+
+                        <source src="../songs/AR.mp3" type="audio/mpeg" />
+                    </audio>
+                </div>
+                <div class="audiocard" onclick="playPause('Meesaya')" style="background-image: url('../static/img_lights_wide.jpg'); background-size: cover; color:aliceblue">
+                    <h2>Meesaya - Murukku </h2>
+                    <audio  id="Meesaya">
+
+                        <source src="../songs/MeesayaMurukku.mp3" type="audio/mpeg" />
+                    </audio>
+                </div>
+                <div class="audiocard" onclick="playPause('Samjhawan')">
+                    <h2>Samjhawan</h2>
+                    <audio  id="Samjhawan">
+
+                        <source src="../songs/Samjhawan.mp3" type="audio/mpeg" />
+                    </audio>
+                </div>
+                <div class="audiocard" onclick="playPause('wafaNeBewafai')" style="background-image: url('../static/2.jpg'); background-size: cover; color:aliceblue">
+                    <h2>Wafa Ne Bewafai </h2>
+                    <audio  id="wafaNeBewafai">
+
+                        <source src="../songs/WafaNeBewafai.mp3" type="audio/mpeg" />
+                    </audio>
+                </div>
+                <div class="audiocard" onclick="playPause('rabta')" style="background-image: url('../static/vilas.jpg'); background-size: cover; color:aliceblue">
+                    <h2>Rabta Agent vinod </h2>
+                    <audio  id="rabta">
+
+                        <source src="../songs/rabta.mp3" type="audio/mpeg" />
+                    </audio>
+                </div>
+            </div>
+        </section>
+
+        <footer></footer>
+    </div>
+</body>
+
+</html>

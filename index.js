@@ -5,6 +5,7 @@ let audio = '';
 let musicPausedAt = -1;
 let musicListLength = 9;
 let previousTrackId = '';
+var timeVar;
 var playAllElement = document.createElement('script');
 playAllElement.src = './playAll.js';
 
@@ -50,6 +51,7 @@ function playPause(audioId) {
             return;
         }
         audio.pause();
+        clearTimeout(timeVar);
         playButton.innerHTML = '<img src="static/icons/play-button.svg" alt="play" width="100px" height="100px">';
     }
 }
@@ -67,7 +69,7 @@ function playNext(i=0) {
         if (isPlayAllEnabled) {
             let currentTrack = document.getElementById(songsList[musicPausedAt]);
             let duration =  (currentTrack.duration - currentTrack.currentTime)*1000;
-            setTimeout(() => {
+            timeVar = setTimeout(() => {
                 if (isPlayAllEnabled && isPlaying) {
                     playNext(musicPausedAt+1);
                 }
@@ -82,6 +84,7 @@ function stopTrack(id) {
     let prevAudio = document.getElementById(id);
     prevAudio.currentTime = 0;
     prevAudio.pause();
+    clearTimeout(timeVar);
     isPlaying = false;
 }
 
@@ -95,6 +98,7 @@ function playPrev(i) {
         }
         let prevAudioId = songsList[i];
         playPause(prevAudioId);
+        clearTimeout(timeVar);
         musicPausedAt = i++;
     } else {
         playPrev(musicListLength-1);
