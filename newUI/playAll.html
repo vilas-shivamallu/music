@@ -20,18 +20,19 @@
     </style>
     <title>Music07</title>
     <link rel="icon" href="../static/icons/favicon.svg" />
+    <script type="text/javascript" src="data.json"></script>
     <script src="audioCard.js"></script>
 </head>
 
 <body>
     <button class="buttonClass" style="position: absolute;"><a href="../index.html"> &#8249;</a></button>
     <div class="container">
-        <header>
-            <h1>“Music gives a soul to the universe, wings to the mind, flight to the imagination, and life to everything.” – Plato</h1>
-        </header>
         <section>
-            <div class="playCard" id="playCard">
-                    <h2 id="playCardSongName"></h2>
+            <h1>“Music gives a soul to the universe, wings to the mind, flight to the imagination, and life to everything.” – Plato</h1>
+        </section>
+        <section id="playerSection">
+            <div class="playCard" id="playCard" style="background-image: url('../static/flower.jpg'); background-size: cover; color:aliceblue; height: 300px; width: 250px; ">
+                    <h2 id="playCardSongName">Mast Magan</h2>
             </div>
             <div class="playButtonCard">
                 <div class="playButtonsGrid"></div>
@@ -53,6 +54,9 @@
                     </div>
                 </div>
             </div>
+        </section>
+        <section>
+            <h1 id="lyrics"></h1>
         </section>
         <section>
             <div class="card">
