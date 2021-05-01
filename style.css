@@ -105,9 +105,20 @@ footer {
     background-color: rgba(0, 0, 0, 0.37);
     border-radius: 0.5rem;
     color: rgb(109, 109, 109);
-    border: 2px solid #0000007c;
-    padding: 10px;
+    border: 1px dashed #ffffff7c;
     font-size: 40px;
+    padding: 0 10px 6px 10px;
+}
+
+.hide {
+    display: none;
+    position: absolute;
+    background-color: #cbceaf;
+}
+
+.buttonClass:hover + .hide{
+    display: block;
+    color: rgb(109, 109, 109);
 }
 
 div.playButtonCard {
