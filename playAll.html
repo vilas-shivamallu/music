@@ -19,7 +19,7 @@
         }
     </style>
     <title>Music07</title>
-    <link rel="icon" href="./static/favicon.svg" />
+    <link rel="icon" href="./static/icons/favicon.svg" />
     <script src="index.js"></script>
 </head>
 
@@ -31,16 +31,23 @@
         </header>
         <section>
             <div class="playButtonCard">
-                <div class="playButtonsGrid"></div>
+                <div class="playButtonsGrid">
+                </div>
                 <div class="playButtonsGrid">
                     <div class="controller">
-                        <span onclick="playPrev(musicPausedAt-1)"><img src="static/last-track-button.png" alt="play" width="100px"></span>
+                        <span onclick="repeatPrev()"><img src="static/icons/replay.svg" alt="icon-repeat" width="100px" height="100px"></span>
                     </div>
                     <div class="controller">
-                        <span onclick="playPause()" id="playButton"><img src="static/play-button.png" alt="play" width="100px"></span>
+                        <span onclick="playPrev(musicPausedAt-1)"><img src="static/icons/previous-button.svg" alt="previous-button" width="100px" height="100px"></span>
                     </div>
                     <div class="controller">
-                        <span onclick="playNext(musicPausedAt+1)"><img src="static/next-track-button.png" alt="play" width="100px"></span>
+                        <span onclick="playPause()" id="playButton"><img src="static/icons/pause-play-button.svg" alt="play-pause-button" width="100px" height="100px"></span>
+                    </div>
+                    <div class="controller">
+                        <span onclick="playNext(musicPausedAt+1)"><img src="static/icons/next-button.svg" alt="next-button" width="100px" height="100px"></span>
+                    </div>
+                    <div class="controller">
+                        <span onclick="playAll()"><img src="static/icons/repeat.svg" alt="icon-repeat" width="100px" height="100px"></span>
                     </div>
                 </div>
             </div>

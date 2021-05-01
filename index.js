@@ -1,5 +1,5 @@
 let isPlaying = false;
-let isAllPlaying = false;
+let isPlayAllEnabled = false;
 let audio = '';
 // let i = 0;
 let musicPausedAt = -1;
@@ -30,8 +30,9 @@ function playPause(audioId) {
     }
     audio = document.getElementById(audioId);
     if (audio == null ) {
-        audio = document.getElementById(songsList[(musicPausedAt == -1 ) ? 0 : musicPausedAt]);
-        (musicPausedAt == -1) ? musicPausedAt++ : '';
+        // audio = document.getElementById(songsList[(musicPausedAt == -1 ) ? 0 : musicPausedAt]);
+        // (musicPausedAt == -1) ? musicPausedAt++ : '';
+        playNext(musicPausedAt);
     }
     if (!isPlaying) {
         console.log("iffsPlaying", isPlaying);
@@ -39,7 +40,7 @@ function playPause(audioId) {
         musicPausedAt = songsList.indexOf(previousTrackId);
         isPlaying = true;
         audio.play();
-        playButton.innerHTML = '<img src="static/pause-button.png" alt="pause" width="100px">';
+        playButton.innerHTML = '<img src="static/icons/pause-button.svg" alt="pause" width="100px" height="100px">';
     } else {
         console.log("ielsesPlaying", isPlaying);
         isPlaying = false;
@@ -49,40 +50,48 @@ function playPause(audioId) {
             return;
         }
         audio.pause();
-        playButton.innerHTML = '<img src="static/play-button.png" alt="play" width="100px">';
+        playButton.innerHTML = '<img src="static/icons/play-button.svg" alt="play" width="100px" height="100px">';
     }
 }
 
 function playNext(i=0) {
     if (i >= 0 && i < musicListLength) {
         if (i > 0 && isPlaying) {
-            let prevAudio = document.getElementById(songsList[i-1]);
-            prevAudio.pause();
-            isPlaying = false;
+            stopTrack(songsList[i-1]);
         } else if (i == 0 && isPlaying) {
-            let prevAudio = document.getElementById(songsList[musicListLength-1]);
-            prevAudio.pause();
-            isPlaying = false;
+           stopTrack(songsList[musicListLength-1]);
         }
         let nextAudioId = songsList[i];
         playPause(nextAudioId);
         musicPausedAt = i;
+        if(isPlayAllEnabled) {
+            let currentTrack = document.getElementById(songsList[musicPausedAt]);
+            let duration =  (currentTrack.duration - currentTrack.currentTime)*1000;
+            setTimeout(() => {
+                if(isPlayAllEnabled) {
+                    playNext(musicPausedAt+1);
+                }
+            }, duration);
+        }
     } else {
         playNext(0);
     }
+}
+
+function stopTrack(id) {
+    let prevAudio = document.getElementById(id);
+    prevAudio.currentTime = 0;
+    prevAudio.pause();
+    isPlaying = false;
 }
 
 function playPrev(i) {
     if (i >= 0 && i < musicListLength) {
         console.log(i);
         if (i+1 < musicListLength && isPlaying) {
-            let prevAudio = document.getElementById(songsList[i+1]);
-            prevAudio.pause();
-            isPlaying = false;
+           stopTrack(songsList[i+1]);
         } else if (i+1 >= musicListLength && isPlaying) {
-            let prevAudio = document.getElementById(songsList[0]);
-            prevAudio.pause();
-            isPlaying = false;
+            stopTrack(songsList[0]);
         }
         let prevAudioId = songsList[i];
         playPause(prevAudioId);
@@ -92,19 +101,25 @@ function playPrev(i) {
     }
 }
 
-// function playPause() {
-//     let playButton = document.getElementById("playButton");
-//     if (!isPlaying) {
-//         playNext(musicPausedAt);
-//         playButton.innerHTML = '<img src="static/pause-button.png" alt="pause" width="100px">';
-//     } else {
-//         playButton.innerHTML = '<img src="static/play-button.png" alt="play" width="100px">';
-//         let prevAudio = document.getElementById(songsList[musicPausedAt-1]);
-//         prevAudio.pause();
-//         isPlaying = false;
-//     }
-// }
+function replay() {
+    if (isPlaying) {
+        stopTrack(songsList[musicPausedAt]);
+    }
+    playPrev(musicPausedAt);
+}
 
+function playAll() {
+    let playButton = document.getElementById("playAll");
+    isPlayAllEnabled = !isPlayAllEnabled;
+    if (isPlayAllEnabled) {
+        if (isPlaying) {
+            playNext(musicPausedAt);
+        }
+        playButton.innerHTML = '<img src="static/icons/repeat.svg" style="background-color: rgb(162 78 24); border-radius: 50px;" alt="play" width="60px" height="60px">';
+    } else {
+        playButton.innerHTML = '<img src="static/icons/repeat.svg" alt="play" width="60px" height="60px" styles=>';
+    }
+}
 
 // function playAll() {
 //     let playButton = document.getElementById("playButton");
@@ -119,18 +134,3 @@ function playPrev(i) {
 //     }
 // }
 
-// function durationFun(i) {
-//     let audio = document.getElementById(revSongId[i]);
-//     if (audio && audio.duration) {
-//         return audio.duration*1000;
-//     }
-//     return 1000;
-// }
-
-function durationFun(i) {
-    let audio = document.getElementById(revSongId[i]);
-    if (audio && audio.duration) {
-        // return audio.duration*1000;
-    }
-    return 3000;
-}

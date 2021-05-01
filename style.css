@@ -32,6 +32,7 @@ header {
     text-align: center;
     margin: auto;
     border-radius: 3vh 3vh 0vh 0vh;
+    border-bottom: 2px dashed #000;
 }
 
 header h1 {
@@ -49,7 +50,7 @@ div.card {
     text-align: center;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    border: 2px dashed #000;
+    /* border: 2px dashed #000; */
     grid-gap: 10px;
 }
 
@@ -76,26 +77,6 @@ div.card {
     grid-template-rows: repeat(4, 1fr);
 }
 
-@keyframes slide {
-    25% {
-        transform: scale(0.99);
-    }
-    50% {
-        transform: scale(0.99);
-    }
-    75% {
-        transform: scale(0.99);
-    }
-}
-
-.audiocard:hover {
-    transform: scale(1.025);
-    box-shadow: 0px 5px 5px #000;
-    animation-name: slide;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-}
-
 audio {
     display: grid;
     grid-row: bottom;
@@ -111,8 +92,7 @@ footer {
     width: 100%;
     min-height: 25vh;
     height: max-content;
-    background-color: #000000;
-    background-image: url("././static/waterfallsDark.jpg");
+    background-color: #000000bb;
     background-repeat: inherit;
     background-size: cover;
     text-align: center;
@@ -133,8 +113,10 @@ div.playButtonCard {
     text-align: center;
     display: grid;
     align-items: center;
-    grid-template-columns: repeat(3, 2fr);
-    border-top: 2px dashed #000;
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* border-top: 2px dashed #000; */
+    grid-gap: 10px;
+
 }
 
 .playButtonsGrid {
@@ -146,7 +128,7 @@ div.playButtonCard {
     cursor: pointer;
     justify-content: center;
     align-items: center;
-    grid-template-columns: repeat(3, 2fr);
+    grid-template-columns: repeat(7, 1fr);
 }
 
 .controller {
@@ -156,12 +138,25 @@ div.playButtonCard {
     border: none;
     display: grid;
     cursor: pointer;
+    margin: 10px;
     justify-content: center;
 }
-.controller:hover {
-        transform: scale(1.025);
-        box-shadow: 0px 5px 5px #000;
-        animation-name: slide;
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
+
+@keyframes slide {
+    25% {
+        transform: scale(0.99);
+    }
+    50% {
+        transform: scale(0.99);
+    }
+    75% {
+        transform: scale(0.99);
+    }
+}
+
+.audiocard:hover,  .controller:hover {
+    transform: scale(1.025);
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
