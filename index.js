@@ -64,11 +64,11 @@ function playNext(i=0) {
         let nextAudioId = songsList[i];
         playPause(nextAudioId);
         musicPausedAt = i;
-        if(isPlayAllEnabled) {
+        if (isPlayAllEnabled) {
             let currentTrack = document.getElementById(songsList[musicPausedAt]);
             let duration =  (currentTrack.duration - currentTrack.currentTime)*1000;
             setTimeout(() => {
-                if(isPlayAllEnabled) {
+                if (isPlayAllEnabled && isPlaying) {
                     playNext(musicPausedAt+1);
                 }
             }, duration);
