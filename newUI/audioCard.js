@@ -191,8 +191,8 @@ function appendPlayCard() {
     playCardSongName.innerHTML = songsDetails[musicPausedAt].name;
     playCard.style.backgroundImage = "url(" + songsDetails[musicPausedAt].imageUrl + ")";
     playCard.style.color = "aliceblue";
-    playCard.style.backgroundSize = "cover";
-    playCard.style.width = "350px";
+    playCard.style.backgroundSize= 'cover';
+    playCard.style.width = "250px";
     playCard.style.height = "300px";
 }
 // function playAll() {
