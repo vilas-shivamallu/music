@@ -5,6 +5,39 @@ body {
     -webkit-tap-highlight-color: transparent;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    min-height: 25vh;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0px 2px 5px #000, 0px 2px 10px #000;
+    border-radius: .5rem;
+}
+
+header h1 {
+    margin-top: 0;
+    display: flex;
+    align-self: unset;
+    margin: auto;
+    background-clip: text;
+}
+section {
+    box-shadow: 0px 2px 5px #000, 0px 2px 10px #000;
+    border-radius: .5rem;
+    margin: 10px;
+    padding: 10px;
+    text-align: -webkit-center;
+}
+footer {
+    min-height: 10vh;
+    margin: 10px;
+    padding: 10px;
+    border-radius: .5rem;
+    background-color: #00000034;
+}
+
 a {
     display: flex;
     text-decoration: none;
@@ -15,67 +48,54 @@ a {
 div.container {
     border: 2px solid #000;
     width: 90%;
-    border-radius: 3vh;
+    border-radius: .5rem;
     background: rgba(0, 0, 0, 0.521);
     margin: 10px auto;
     background-color: #000000;
-    background-image: url("././static/waterfallsDark.jpg");
+    background-image: url("./static/waterfallsDark1.jpg");
     background-repeat: inherit;
     background-size: cover;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    min-height: 25vh;
-    height: max-content;
-    text-align: center;
-    margin: auto;
-    border-radius: 3vh 3vh 0vh 0vh;
-    border-bottom: 2px dashed #000;
-}
-
-header h1 {
-    margin-top: 0;
-    display: flex;
-    align-self: unset;
-    margin: auto;
-    background-clip: text;
+    flex-direction: column;
+    background-attachment: fixed;
 }
 
 div.card {
-    min-width: 300px;
     padding: 10px;
-    text-decoration-color: rgb(247, 11, 11);
     text-align: center;
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     /* border: 2px dashed #000; */
     grid-gap: 10px;
 }
 
 @media screen and (min-device-width: 600px) {
     div.card {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
-@media screen and (min-device-width: 1080px) {
+@media screen and (min-device-width: 900px) {
     div.card {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (min-device-width: 1200px) {
+    div.card {
+        grid-template-columns: repeat(5, 1fr);
     }
 }
 
 .audiocard {
     background-color: rgba(0, 0, 0, 0.726);
-    background-image: url("././static/bodyback.JPG");
+    background-image: url("./static/bodyback.JPG");
     background-size: cover;
     box-shadow: 0px 5px 5px #000, 0px 5px 10px #000;
-    border-radius: 2vh;
+    border-radius: .5rem;
     display: grid;
     cursor: pointer;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    max-height: 200px;
 }
 
 audio {
@@ -85,20 +105,19 @@ audio {
     height: 2em;
 }
 
+
 audio::-webkit-media-controls-panel {
     background-color: rgba(0, 0, 0, 0.863);
 }
 
-footer {
-    width: 100%;
-    min-height: 25vh;
-    height: max-content;
-    background-color: #000000bb;
-    background-repeat: inherit;
-    background-size: cover;
-    text-align: center;
-    margin: auto;
-    border-radius: 0px 0px 3vh 3vh;
+.playCard {
+    border-radius: .5rem;
+    display: grid;
+    margin: 20px;
+    /* cursor: pointer;
+    grid-template-rows: repeat(3, 1fr); */
+    /* height: 300px;
+    width: 300px; */
 }
 
 .buttonClass {
@@ -110,26 +129,27 @@ footer {
     padding: 0 10px 6px 10px;
 }
 
+@media only screen and (max-device-width: 600px) {
+    .buttonClass {
+        font-size: 80px;
+    }
+}
+
 .hide {
     display: none;
     position: absolute;
     background-color: #cbceaf;
 }
-
 .buttonClass:hover + .hide{
     display: block;
     color: rgb(109, 109, 109);
 }
 
 div.playButtonCard {
-    text-decoration-color: rgb(247, 11, 11);
-    text-align: center;
     display: grid;
-    align-items: center;
-    /* grid-template-columns: repeat(3, 1fr); */
-    /* border-top: 2px dashed #000; */
     grid-gap: 10px;
-
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .playButtonsGrid {
@@ -139,9 +159,9 @@ div.playButtonCard {
     border: none;
     display: grid;
     cursor: pointer;
-    justify-content: center;
     align-items: center;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    border-radius: .5rem;
 }
 
 .controller {

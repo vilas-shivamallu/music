@@ -28,3 +28,15 @@ Playing All songs on load
 //     }, durationFun(i))
 // })(musicListLength);
 
+// function playAll() {
+//     let playButton = document.getElementById("playButton");
+//     isAllPlaying = !isAllPlaying;
+//     if (isAllPlaying) {
+//         playButton.innerHTML = '<img src="../static/pause-button.png" alt="pause" width="100px">';
+//         document.getElementsByTagName("head")[0].appendChild(playAllElement);
+//     } else {
+//         playButton.innerHTML = '<img src="../static/play-button.png" alt="play" width="100px">';
+//         document.getElementsByTagName("head")[0].removeChild(playAllElement);
+//         i = musicPausedAt;
+//     }
+// }
