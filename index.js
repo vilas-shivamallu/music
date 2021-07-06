@@ -46,14 +46,14 @@ let songsDetails = [
         "name": "Janam Janam",
         "year": "1998",
         "singer": "",
-        "imageUrl": "./static/content.jpg",
+        "imageUrl": "./static/content.svg",
         "lyrics": "Janam janam janam sath chalna yunhi<br>        Qasam tumhe qasam aake milna yahin<br>        Ek jaan hai bhale do badan hon juda<br>        Meri hoke humesha hi rehna<br>        Kabhi na kehna alvida<br>        <br>        Meri subha ho tumhi<br>        Aur tumhi shaam ho<br>        Tum dard ho tum hi aaram ho<br>        Meri duaaon se aati hai bas yeh sadaa<br>        Meri hoke humesha hi rehna<br>        Kabhi na kehna alvida<br>        <br>        Meri hoke humesha hi rehna<br>        Kabhi na kehna alvida..<br>        <br>        Teri baahon mein hain mere dono jahan<br>        Tu rahe jidhar meri jannat wahin<br>        Jal rahi agan hai jo yeh do tarfa<br>        Na bujhe kabhi meri mannat yahi<br>        Tu meri aarzoo main teri aashiqui<br>        Tu meri shayari main teri mausiqui<br>        <br>        Talab Talab Talab bas teri hai mujhe<br>        Nason mein tu nasha banke ghulna yunhi<br>        Meri mohabbat ka karna tu haq ye ada<br>        Meri hoke humesha hi rehna<br>        Kabhi na kehna alvida<br>        <br>        Meri subha ho tumhi<br>        Aur tumhi shaam ho<br>        Tum dard ho tum hi aaram ho<br>        Meri duaaon se aati hai bas yeh sadaa<br>        Meri hoke humesha hi rehna<br>        Kabhi na kehna alvida<br>"
     }, {
         "id": "ar",
         "name": "AR",
         "year": "1998",
         "singer": "",
-        "imageUrl": "./static/waterfallsDark.jpg",
+        "imageUrl": "./static/waterfallsDark.svg",
         "lyrics": "&#119133; &#119134; &#119135; &#119136; &#119137; &#119138; &#119139; &#119140; &#9837; &#9838; &#9839; &#119040; &#119041; &#119042; &#119043; &#119044; &#119045; &#119046; &#119047; &#119048; <br> &#119070; &#119071; &#119072; &#119073; &#119074; &#119075; &#119076; &#119077; &#119078; &#119081; &#119082; &#119083; &#119084; &#119085; &#119086; &#119087; &#119088; &#119089; &#119090; &#119091; &#119092; <br> &#119249; &#119250,&#119251; &#119252; &#119253; &#119254; &#119255,&#119256&#119257&#119258; &#119259,&#119260; &#119261; <br>"
     }, {
         "id": "Meesaya",
@@ -67,14 +67,14 @@ let songsDetails = [
         "name": "Samjhawan",
         "year": "1998",
         "singer": "",
-        "imageUrl": "./static/bodyback.jpg",
+        "imageUrl": "./static/bodyback.svg",
         "lyrics": "Main tenu samjhawan ki<br>        Na tere bina lagda jee<br>        <br>        Main tenu samjhawan ki<br>        Na tere bina lagda jee<br>        <br>        Tu ki jaane pyaar mera<br>        Main karoon intezar tera<br>        Tu dil, tunhion jaan meri<br>        <br>        Main tenu samjhawan ki<br>        Na tere bina lagda jee<br>        Tu ki jaane pyaar mera<br>        Main karoon intezar tera<br>        Tu dil, tunhion jaan meri<br>        <br>        Main tenu samjhawan ki<br>        Na tere bina lagda jee<br>        <br>        Mere dil ne chun laiya ne<br>        Tere dil diyan rahaan<br>        Tu jo mere naal tu rehnta<br>        Turpe meriyaan saaha<br>        Jeena mera haye<br>        Hun hai tera, ki main karaan<br>        Tu kar eitbaar mera<br>        Main karoon intezar tera<br>        Tu dil, tunhion jaan meri!<br>        <br>        Main tenu samjhawan ki<br>        Na tere bina lagda jee<br>        <br>        Ve changa nahion keeta beeba,<br>        Ve changa nahion keeta beeba<br>        Dil mera tod ke<br>        Ve bada pachtaiyaan akhaan,<br>        Ve bada pachtaiyaan akhaan<br>        Naal tere jod ke<br>        <br>        Tenu chadd ke kitthe jawaan tu mera parchanwa<br>        Tere mukhde vich hi main taan<br>        Rabb nu apni pawaan<br>        Meri duya haye, sajda tera, karti sada<br>        Tu sun ekraar mera<br>        Main karoon intezar tera<br>        Tu dil, tunhion jaan meri<br>        <br>        Main tenu samjhawan ki<br>        Na tere bina lagda jee<br>        <br>"
     }, {
         "id": "wafaNeBewafai",
         "name": "Wafa Ne Bewafai",
         "year": "1998",
         "singer": "",
-        "imageUrl": "./static/2.jpg",
+        "imageUrl": "./static/2.svg",
         "lyrics": "Ik daur woh tha, mujhse bhi zyada<br>        Unko fikar thi meri..<br>        Kehte thhe mujhse, ruksat na honge<br>        Milke dubara kabhi..<br>        <br>        Ab toh gairon se<br>        Mera haal pucha jaata hai<br>        Yahi dard-e-dil<br>        Mere dil ko rulata hai<br>        <br>        Wafa ne bewafai, bewafai<br>        Bewafai ki hai<br>        <br>        Wafa ne bewafai, bewafai<br>        Bewafai ki hai<br>        <br>        Wafa ne bewafai, bewafai<br>        Bewafai ki hai<br>        <br>        Wafa ne bewafa..<br>        <br>        Baby when I look into your eyes<br>        Baby I'm in paradise<br>        We could take you to the skies<br>        We could make you and I (x2)<br>        <br>        Meri aashiqui ye, rabb ke hawale<br>        Ruthe yaar ko bas, koi mana le<br>        Yaadon ki sooli dil mein<br>        Gadd jaati hai<br>        Veeraniyan jab hadh se<br>        Badh jaati hai<br>        <br>        Ik daur woh tha, mujhse bhi zyaada<br>        Unko fikar thi meri..<br>        Kehte thhe mujhse, ruksat na honge<br>        Milke dubara kabhi..<br>        <br>        Ab toh gairon se<br>        Mera haal pucha jaata hai<br>        Yahi dard-e-dil<br>        Mere dil ko rulata hai<br>        <br>        Wafa ne bewafai, bewafai<br>        Bewafai ki hai (x3)<br>        <br>        Wafa ne bewafai..<br>        <br>        Kuch baatein aisi hoti hai<br>        Jinko bayaan karna<br>        Lafzon mein, namumkin hota hai<br>        Jab wafa mein, wafa hoti hai<br>        Koi na koi wajah hoti hai<br>        Koi na koi wajah hoti hai<br>        <br>        Kyu faaslon mein, nazdeekiyan hain<br>        Kyu zindagi mein, tabdeeliyan<br>        Kyu tanha dil yeh mera mujhse kahein<br>        Yeh silsila bas yoonhi chalta rahein<br>        <br>        Jaane kya huaa hai jiski waja se<br>        Manzilein juda si lag rahi<br>        Anjaani raah pe dil yeh kyun<br>        Khud ko paata hai<br>        Yahi dard-e-dil mere dil ko rulaata hai<br>        <br>        Wafa ne bewafai, bewafai<br>        Bewafai ki hai<br>"
     }, {
         "id": "rabta",
