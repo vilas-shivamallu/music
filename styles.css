@@ -88,7 +88,7 @@ div.card {
 
 .audiocard {
     background-color: rgba(0, 0, 0, 0.726);
-    background-image: url("./static/bodyback.JPG");
+    background-image: url("./static/bodyback.svg");
     background-size: cover;
     box-shadow: 0px 5px 5px #000, 0px 5px 10px #000;
     border-radius: .5rem;

@@ -6,8 +6,6 @@ let musicPausedAt = -1;
 let musicListLength = 9;
 let previousTrackId = '';
 var timeVar;
-var playAllElement = document.createElement('script');
-playAllElement.src = './playAll.js';
 
 let songsList = [
     "mastMaganAudioId",
