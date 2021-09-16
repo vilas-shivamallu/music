@@ -52,7 +52,7 @@ div.container {
     background: rgba(0, 0, 0, 0.521);
     margin: 10px auto;
     background-color: #000000;
-    background-image: url("./static/waterfallsDark1.jpg");
+    background-image: url("./static/waterfallsDark.webp");
     background-repeat: inherit;
     background-size: cover;
     flex-direction: column;
@@ -88,7 +88,7 @@ div.card {
 
 .audiocard {
     background-color: rgba(0, 0, 0, 0.726);
-    background-image: url("./static/bodyback.svg");
+    background-image: url("./static/bodyback.webp");
     background-size: cover;
     box-shadow: 0px 5px 5px #000, 0px 5px 10px #000;
     border-radius: .5rem;
